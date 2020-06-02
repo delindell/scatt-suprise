@@ -13,7 +13,7 @@ class MyNavBar extends React.Component {
   render() {
     return (
       <div className="MyNavBar">
-        <h1>My NAv</h1>
+        <h1>My NAV</h1>
         <button className="btn btn-warning" onClick={this.logoutEvent}>Logout</button>
       </div>
     );
