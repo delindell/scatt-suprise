@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import {
@@ -46,7 +47,13 @@ class MyNavBar extends React.Component {
         return (
           <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink href="/components/">Components</NavLink>
+            <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RRNavLink} to='/new'>New Scat</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink className="btn" onClick={this.logoutEvent}>Logout</NavLink>
           </NavItem>
         </Nav>
         );
@@ -56,8 +63,6 @@ class MyNavBar extends React.Component {
 
     return (
       <div className="MyNavBar">
-              {/* <button className="btn btn-warning" onClick={this.logoutEvent}>Logout</button> */}
-
         <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Scatt Suprise</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
