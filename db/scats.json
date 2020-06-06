@@ -121,7 +121,7 @@
       "notes": "smelly",
       "uid": "p00pin"
     },
-    "scatt12": {
+    "scat12": {
       "color": "brown",
       "shape": "spiral",
       "size": "medium",
@@ -145,7 +145,7 @@
     },
     "scat14": {
       "color": "orange",
-      "shape": "mom's spaghetti",
+      "shape": "moms spaghetti",
       "size": "large",
       "temperature": 32,
       "viscosity": "thick",
@@ -167,7 +167,7 @@
     },
     "scat16": {
       "color": "yellow-y brown",
-      "shape:": "swirly mountain",
+      "shape": "swirly mountain",
       "size": "medium-ish",
       "temperature": 99,
       "viscosity": "soft serve",
