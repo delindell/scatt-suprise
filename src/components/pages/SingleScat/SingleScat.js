@@ -28,7 +28,6 @@ class SingleScat extends React.Component {
         <p>Notes: {scat.notes}</p>
         <p>Location: {scat.location}</p>
         <p>Was it Fulfilling? {scat.wasFulfilling ? 'Yes' : 'no'}</p>
-
       </div>
     );
   }
