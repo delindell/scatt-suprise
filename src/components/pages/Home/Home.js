@@ -22,9 +22,15 @@ class Home extends React.Component {
       .catch((err) => console.error('problem with scats', err));
   }
 
+  removeScat = (scatId) => {
+    scatData.deleteScat(scatId)
+      .then(() => this.getScats())
+      .catch((err) => console.error('unable to delte scat', err));
+  }
+
   render() {
     const { scats } = this.state;
-    const buildScatCards = scats.map((scat) => <ScatCard scat={scat} key={scat.id} />);
+    const buildScatCards = scats.map((scat) => <ScatCard scat={scat} key={scat.id} removeScat={this.removeScat}/>);
     return (
       <div className="Home">
         <h1>Home</h1>
