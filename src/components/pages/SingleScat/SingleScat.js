@@ -15,10 +15,18 @@ class SingleScat extends React.Component {
       .catch((err) => console.error('problem getting single scat', err));
   }
 
+  removeScat = () => {
+    const { scatId } = this.props.match.params;
+    scatData.deleteScat(scatId)
+      .then(() => this.props.history.push('/home'))
+      .catch((err) => console.error('could not delte', err));
+  }
+
   render() {
     const { scat } = this.state;
     return (
       <div className="SingleScat" style={{ backgroundColor: scat.color }}>
+        <button className="btn btn-danger" onClick={this.removeScat}>REMOVE</button>
         <h1>{scat.location}</h1>
         <p>Color: {scat.color}</p>
         <p>Shape: {scat.shape}</p>

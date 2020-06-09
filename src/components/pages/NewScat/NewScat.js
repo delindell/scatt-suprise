@@ -190,13 +190,3 @@ class NewScat extends React.Component {
 }
 
 export default NewScat;
-
-      // "color": "black",
-      // "shape": "sphere",
-      // "size": "large",
-      // "temperature": 70,
-      // "viscosity": "firm",
-      // "wasFulfilling": true,
-      // "location": "porta-potty",
-      // "notes": "made me turn around and leave immediately",
-      // "uid": "eK6V1Wp2SXNdZRhCj5FmzX8XdV32
